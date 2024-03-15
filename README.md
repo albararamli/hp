@@ -58,7 +58,7 @@ right_data.plot(x="index", y=["ppg"], figsize=(22, 3))
 left_data.plot(x="index", y=["ecg"], figsize=(22, 3))
 right_data.plot(x="index", y=["ecg"], figsize=(22, 3))
 
-# Left side
+# Acceleration Signal on the Left side
 # Remove the drift in the acceleration signal of the left side
 left_data_no_drift = hp3_remove_drift(left_data, base=50)
 
@@ -68,7 +68,7 @@ display(left_data_no_drift)
 # Draw the signal before and after removing the drift for the left side
 draw_drift(left_data_no_drift)
 
-# Right side
+# Acceleration Signal on the Right side
 # Remove the drift in the acceleration signal of the right side
 right_data_no_drift = hp3_remove_drift(right_data, base=50)
 
