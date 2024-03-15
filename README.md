@@ -57,17 +57,20 @@ data = hp3_read(url)
 left_data = data[data['side'] == "L"]
 right_data = data[data['side'] == "R"]
 
-# Draw the acceleration signal, PPG, and ECG of the left and right sides
+# Draw the acceleration signal of the left and right sides
 left_data.plot(x="index", y=["acc_x", "acc_y", "acc_z"], figsize=(22, 3))
 right_data.plot(x="index", y=["acc_x", "acc_y", "acc_z"], figsize=(22, 3))
 
+# Draw the PPG of the left and right sides
 left_data.plot(x="index", y=["ppg"], figsize=(22, 3))
 right_data.plot(x="index", y=["ppg"], figsize=(22, 3))
 
+# Draw the ECG of the left and right sides
 left_data.plot(x="index", y=["ecg"], figsize=(22, 3))
 right_data.plot(x="index", y=["ecg"], figsize=(22, 3))
 
 # Acceleration Signal on the Left side
+
 # Remove the drift in the acceleration signal of the left side
 left_data_no_drift = hp3_remove_drift(left_data, base=50)
 
@@ -78,6 +81,7 @@ display(left_data_no_drift)
 draw_drift(left_data_no_drift)
 
 # Acceleration Signal on the Right side
+
 # Remove the drift in the acceleration signal of the right side
 right_data_no_drift = hp3_remove_drift(right_data, base=50)
 
