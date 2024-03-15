@@ -17,15 +17,24 @@ The script provided in this repository offers a comprehensive solution for worki
 
 To begin using the script, follow these steps:
 
-1. **Clone the Repository**: Clone this repository to your local machine using Git.
+1. **Download the Script Files**: Download the `hp3.py` and `main.py` files. Place `hp3.py` in the same directory as `main.py`.
 
-2. **Install Dependencies**: Ensure that you have Python installed on your system along with the necessary libraries:
-import pandas as pd
-import matplotlib.pyplot as plt
-import warnings
+2. **Provide Target HP3 File**: Ensure you have the target HP3 file (`hp3_file.hp3`) in the same directory as `main.py`. This file contains the data you want to analyze.
 
-4. **Execute the Script**: Run the main Python script to start processing HP3 files and analyzing the data.
+3. **Install Dependencies**: Make sure you have Python installed on your system. Additionally, install the required libraries by running:
 
+   ```
+   pip3 install pandas matplotlib
+   ```
+
+4. **Execute the Script**: Run the `main.py` script using the following command:
+
+   ```
+   python3 main.py
+   ```
+
+   This will start processing the target HP3 file and analyzing the data.
+   
 ## Example Usage
 
 ```python
