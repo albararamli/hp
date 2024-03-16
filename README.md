@@ -43,14 +43,14 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import os
 
-# Import the hp3_read function from the hp3 module
+# Import the hp module
 from hp import *
 
 # Specify the URL or path to the HP3 or HP4 file
 url = "file.hp3"
 #url = "file.hp4"
 
-# Read the HP3 file and extract the data
+# Read the HP3 or HP4 file and extract the data
 data, extension = hp_read(url)
 
 # Display the data
