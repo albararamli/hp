@@ -199,7 +199,7 @@ def hp3_read(url):
   df.reset_index(drop=True, inplace=True)
   ############
   # Calculate the time range
-  time_diff_sec = 1 / 250
+  time_diff_sec = 1 / 200
   # Calculate the total number of samples
   total_samples = len(df)
   # Create the time column
